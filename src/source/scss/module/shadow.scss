@@ -1,0 +1,21 @@
+.shadow {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: 500ms ease;
+  background: var(--shadow-color);
+
+  &.one {
+    z-index: -1;
+    opacity: .15;
+  }
+
+  &.two {
+    z-index: -2;
+    opacity: .1;
+  }
+}
